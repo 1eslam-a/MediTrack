@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - MediTrack</title>
+    <link rel="stylesheet" href="contact.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="images/MediTrack Logo.png" alt="MediTrack Logo">
+        </div>
+        <div id="menu-bars" class="fas fa-bars"></div>
+        <nav class="navbar">
+            <a href="index.html">Home</a>
+            
+            <a href="contact.html">Contact</a>
+        </nav>
+    </header>
+
+    <main class="main-container">
+        <section class="contact-section">
+            <div class="contact-container">
+                <h2>Contact Us</h2>
+                <p class="subtitle">We value your feedback. Please fill out the form below to get in touch with us.</p>
+                
+                <form class="contact-form" id="contactForm">
+                    <div class="form-group">
+                        <label for="name">Full Name</label>
+                        <input type="text" id="name" name="name" placeholder="Enter your full name" required>
+                    </div>
+                    
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" name="email" placeholder="Enter your email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="phone">Phone Number</label>
+                            <input type="tel" id="phone" name="phone" placeholder="Enter your phone number" required>
+                        </div>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="address">Address</label>
+                        <input type="text" id="address" name="address" placeholder="Enter your full address" required>
+                    </div>
+                    
+                    <div class="form-group file-upload-group">
+                        <label>Upload Prescription</label>
+                        <div class="file-upload-wrapper">
+                            <label for="file-upload" class="custom-file-upload">
+                                <i class="fas fa-cloud-upload-alt"></i> Choose File
+                            </label>
+                            <input type="file" id="file-upload" name="file-upload" accept="image/*,.pdf">
+                            <span id="file-chosen">No file chosen</span>
+                        </div>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="message">Your Message</label>
+                        <textarea id="message" name="message" placeholder="Write your message or complaint here..." required></textarea>
+                    </div>
+                    
+                    <button type="submit" class="submit-btn">
+                        <i class="fas fa-paper-plane"></i> Send Message
+                    </button>
+                </form>
+            </div>
+            
+            <div class="contact-info">
+                <div class="info-card">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <h3>Our Location</h3>
+                    <p>123 Medical Street, Health District, Cairo, Egypt</p>
+                </div>
+                
+                <div class="info-card">
+                    <i class="fas fa-phone-alt"></i>
+                    <h3>Phone Number</h3>
+                    <p>+20 1151248781</p>
+                    <p>+20 1234567891</p>
+                </div>
+                
+                <div class="info-card">
+                    <i class="fas fa-envelope"></i>
+                    <h3>Email Address</h3>
+                    <p>info@meditrack.com</p>
+                    <p>support@meditrack.com</p>
+                </div>
+            </div>
+        </section>
+        
+        <section class="submitted-contacts" id="submittedContacts">
+            <h2>Recent Contacts</h2>
+            <div class="contacts-container" id="contactsContainer">
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <p>&copy; 2025 MediTrack Pharmacy. All rights reserved.</p>
+            <div class="social-links">
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-linkedin-in"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="contact.js"></script>
+</body>
+</html>
